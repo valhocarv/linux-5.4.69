@@ -1422,3 +1422,5 @@ long compat_ksys_semtimedop(int semid, struct sembuf __user *tsems,
 			    const struct old_timespec32 __user *timeout);
 
 #endif
+//syscall customizada
+asmlinkage long sys_listProcessInfo(long pid, const char __user *buf, int size);
